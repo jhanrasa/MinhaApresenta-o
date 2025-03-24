@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Apresentação</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Jean Domiciano De Menezes</h1>
+            <p>Desenvolvedor e Criador de Soluções Inovadoras</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de Contato -->
+        <section id="contact">
+            <h2>Contato</h2>
+            <div class="contact-info">
+                <p><strong>E-mail:</strong> jhanrasa@gmail.com</p>
+                <p><strong>Telefone:</strong> (16) 99633-2657</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jean-domiciano-de-menezes-26485a231/" target="_blank">linkedin.com/in/jean</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/jhanrasa" target="_blank">github.com/jean</a></p>
+            </div>
+        </section>
+
+        <!-- Seção: Sobre Mim -->
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="C:\Users\jean\Desktop\Projetos\Web\foto_jean.jpg" alt="Foto de Jean" class="about-photo">
+                <p>Olá! Meu nome é Jean e sou um desenvolvedor apaixonado por tecnologia e inovação. Estou me formando em <strong>Engenharia da Computação pela UNIARA</strong>, e ao longo dos últimos 4 anos venho trabalhando em projetos que combinam criatividade e funcionalidade.</p>
+                <p>Minha experiência inclui desenvolvimento web, aplicações desktop e soluções multiplataforma. Um dos meus projetos favoritos é o <a href="https://github.com/jhanrasa/Quiz-Adventure" target="_blank">Aventura de Quiz</a>, um aplicativo interativo que criei para ajudar estudantes a aprenderem de forma divertida.</p>
+                <p>Além disso, gosto de explorar novas tecnologias e aprender continuamente. Nas horas vagas, gosto de ler, jogar xadrez e treinar na academia. Estou sempre em busca de novos desafios e oportunidades para colaborar em projetos incríveis. Se quiser saber mais ou me contratar, <a href="mailto:jhanrasa2014@gmail.com">entre em contato</a>!</p>
+            </div>
+        </section>
+
+        <!-- Seção de Competências -->
+        <section id="skills">
+            <h2>Competências</h2>
+            <ul class="skills-list">
+                <li>Desenvolvimento Web (HTML, CSS, JavaScript)</li>
+                <li>Programação em Python (Kivy, Flask, Django)</li>
+                <li>Design de Interfaces Responsivas</li>
+                <li>Gerenciamento de Projetos e Versionamento (Git)</li>
+                <li>Banco de Dados (SQL, SQLite)</li>
+                <li>Conhecimento basico em (C, MatLab)</li>
+            </ul>
+        </section>
+
+        <!-- Seção de Projetos -->
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div class="projects-container">
+                <!-- Projeto 1: Aventura de Quiz -->
+                <div class="project-card">
+                    <h3>Aventura de Quiz</h3>
+                    <p>Um aplicativo de quiz interativo com perguntas de múltipla escolha e resposta aberta em python.</p>
+                    <p><strong>*Esta é apenas uma versão de exibição</strong></p>
+                    <div class="project-demo" id="quiz-demo">
+                        <div class="quiz-container">
+                            <h4 id="quiz-question">Pergunta: Qual é a capital do Brasil?</h4>
+                            <div class="quiz-options">
+                                <label><input type="radio" name="quiz-answer" value="a"> a) São Paulo</label>
+                                <label><input type="radio" name="quiz-answer" value="b"> b) Brasília</label>
+                                <label><input type="radio" name="quiz-answer" value="c"> c) Rio de Janeiro</label>
+                            </div>
+                            <button onclick="checkQuizAnswer()">Enviar Resposta</button>
+                            <p id="quiz-result"></p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/jhanrasa/Quiz-Adventure" class="project-link" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <!-- Projeto 2: Projeto Exemplo -->
+                <div class="project-card">
+                    <h3>Inverte String</h3>
+                    <p>Uma aplicação Java que inverte uma string fornecida pelo usuário.</p>
+                    <div class="project-demo" id="inverte-string-demo">
+                        <div class="inverte-string-container">
+                            <h4>Inverter uma String</h4>
+                            <input type="text" id="string-input" placeholder="Digite uma string" aria-label="Digite uma string para inverter">
+                            <button onclick="inverteString()">Inverter</button>
+                            <p><strong>Original:</strong> <span id="string-original"></span></p>
+                            <p><strong>Invertida:</strong> <span id="string-invertida"></span></p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/jhanrasa/Target-Inversor_de_string" class="project-link" target="_blank">Ver no GitHub</a>
+                </div>
+
+                <!-- Adicione mais projetos aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Jean Domiciano de Menezes. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

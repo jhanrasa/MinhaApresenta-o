@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32; /* Verde escuro */
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #6a1b9a; /* Roxo escuro */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Seção de Contato */
+.contact-info {
+    background-color: #e1bee7; /* Roxo claro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Seção: Sobre Mim */
+.about-content {
+    background-color: #a5d6a7; /* Verde claro */
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 1s ease-in; /* Animação de fade-in */
+}
+
+.about-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: block;
+    object-fit: cover;
+    border: 3px solid #2e7d32; /* Borda verde escura */
+}
+
+.about-content p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.about-content a {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+    color: #6a1b9a;
+}
+
+/* Animação de Fade-In */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção de Competências */
+.skills-list {
+    list-style: none;
+    background-color: #a5d6a7;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+/* Seção de Projetos */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    color: #6a1b9a;
+    margin-bottom: 0.5rem;
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+}
+
+.project-demo {
+    margin: 1rem 0;
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Estilos para o Quiz */
+.quiz-container {
+    text-align: left;
+}
+
+.quiz-container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-options {
+    margin-bottom: 1rem;
+}
+
+.quiz-options label {
+    display: block;
+    margin: 0.3rem 0;
+}
+
+.quiz-options input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+.quiz-container button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quiz-container button:hover {
+    background-color: #7b1fa2;
+}
+
+#quiz-result {
+    margin-top: 0.5rem;
+    font-weight: 500;
+}
+
+/* Estilos para o Inverte String */
+.inverte-string-container {
+    text-align: center;
+}
+
+.inverte-string-container h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.inverte-string-container input[type="text"] {
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.inverte-string-container button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.inverte-string-container button:hover {
+    background-color: #7b1fa2;
+}
+
+.inverte-string-container p {
+    margin: 0.5rem 0;
+}
+
+.inverte-string-container span {
+    font-weight: 500;
+    color: #2e7d32;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover {
+    background-color: #7b1fa2;
+}
+
+footer {
+    background-color: #2e7d32;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info, .about-content, .skills-list, .project-card {
+        padding: 1rem;
+    }
+
+    .about-photo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .project-demo {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .contact-info, .about-content, .skills-list, .project-card {
+        padding: 1rem;
+    }
+
+    .about-photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+
+    .quiz-container h4, .inverte-string-container h4 {
+        font-size: 1rem;
+    }
+
+    .quiz-container button, .inverte-string-container button {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .inverte-string-container input[type="text"] {
+        max-width: 100%;
+    }
+}
